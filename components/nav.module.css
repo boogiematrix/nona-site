@@ -1,17 +1,21 @@
 .navBar {
-    font-family: 'franklin-gothic-urw';
+    font-family: franklin-gothic-urw,"proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 500;
     font-style: normal;
     letter-spacing: .1em;
     text-transform: uppercase;
     line-height: 1.6em;
-    font-size: 1rem;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
 }
 
 .navBar a{
-    padding: 2.3vw 2vw;
+    padding: 2.3vw 1vw;
 }
 
 .navHead {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 1em;
 }

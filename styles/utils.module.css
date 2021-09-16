@@ -50,3 +50,10 @@
 .lightText {
   color: #666;
 }
+
+.centerImage {
+  margin: 0 auto;
+  position: absolute;
+  width: 80%;
+  height:auto;
+}

@@ -1,7 +1,8 @@
-.container {
- 
-  padding: 0 1rem;
-  margin: 3rem auto 6rem;
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px
 }
 
 .header {
