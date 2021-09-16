@@ -17,7 +17,7 @@
 .headingLg {
   font-size: 1.5rem;
   line-height: 1.4;
-  margin: 1rem 0;
+  margin: 1rem 0 8rem;
 }
 
 .headingMd {
@@ -56,4 +56,19 @@
   position: absolute;
   width: 80%;
   height:auto;
+}
+
+.musicLayout {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-align: center;
+}
+
+.musicLayout a {
+  margin: 10px 40px;
+}
+
+.musicLayout img {
+  overflow: hidden;
 }
