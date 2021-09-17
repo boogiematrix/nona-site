@@ -59,16 +59,36 @@
 }
 
 .musicLayout {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  text-align: center;
-}
-
-.musicLayout a {
-  margin: 10px 40px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    grid-column-gap: 80px;
+    grid-row-gap: 40px;
+    grid-auto-rows: min-content;
+    text-align: center;
 }
 
 .musicLayout img {
   overflow: hidden;
+}
+
+.musicCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.musicImage {
+  padding-bottom: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  line-height: 0;
+}
+
+.musicImageWrapper {
+  position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
