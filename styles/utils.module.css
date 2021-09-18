@@ -58,6 +58,16 @@
   height:auto;
 }
 
+.flexColumn{
+  display:flex;
+  flex-direction: column;
+}
+
+.flexRow{
+  display:flex;
+  flex-direction: row;
+}
+
 .musicLayout {
     display: grid;
     grid-template-columns: repeat(3,minmax(0,1fr));
