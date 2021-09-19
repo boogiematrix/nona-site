@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Layout from '../components/layout'
+import utilStyle from '../styles/utils.module.css'
 
 export default function Contact() {
     return (
@@ -16,14 +17,14 @@ export default function Contact() {
                     <a href='https://linktr.ee/nonainvie'>Mutual Aid and Community Care Links</a>
                 </p>
             </div>
-            <form>
+            <form className={utilStyle.flexColumn}>
                 <label>Name *</label>
-                <div>
-                    <div>
+                <div className={utilStyle.flexRow}>
+                    <div className={utilStyle.flexColumn}>
                         <input></input>
                         <label>first name</label>
                     </div>
-                    <div>
+                    <div className={utilStyle.flexColumn}>
                         <input></input>
                         <label>last name</label>
                     </div>
