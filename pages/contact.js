@@ -1,8 +1,23 @@
+import {useState} from 'react'
 import Head from 'next/head'
 import Layout from '../components/layout'
 import utilStyle from '../styles/utils.module.css'
 
 export default function Contact() {
+    const [formState, setFormState] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: ''
+    })
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
+    }
     return (
         <Layout>
             <Head>
@@ -17,12 +32,18 @@ export default function Contact() {
                     <a href='https://linktr.ee/nonainvie'>Mutual Aid and Community Care Links</a>
                 </p>
             </div>
-            <form className={utilStyle.flexColumn}>
+            <form className={utilStyle.flexColumn} action="mailto:nonainvie@gmail.com" method="post" encType="text/plain">
                 <label>Name *</label>
                 <div className={utilStyle.flexRow}>
                     <div className={utilStyle.flexColumn}>
-                        <input></input>
-                        <label>first name</label>
+                        <input
+                            placeholder="first name"
+                            name="firstName"
+                            type="firstName"
+                            id="firstName"
+                            onChange={handleChange}
+                        />
+                        <label htmlFor='firstName'>first name</label>
                     </div>
                     <div className={utilStyle.flexColumn}>
                         <input></input>
